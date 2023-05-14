@@ -29,3 +29,23 @@
         color: $colorTextMainGrey;
     }
 }
+@media screen and (max-width: 767px) {
+    .adventages {
+        & .container {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        &__card {
+            width: 100%;
+            max-width: 450px;
+            height: fit-content;
+        }
+        &__img {
+            display: flex;
+            justify-content: center;
+        }
+        &__title {
+            text-align: center;
+        }
+    }
+}

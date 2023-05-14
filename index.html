@@ -54,6 +54,17 @@
                         +48&nbsp;111&nbsp;111&nbsp;111</a
                     >
                 </div>
+                <!--MOBILE MENU-->
+                <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                    tabindex="1"
+                >
+                    <svg width="40" height="40" class="menu-toggle__icon" tabindex="0">
+                        <use href="./images/icons.svg#icon-mobile-menu"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <!-- STUDIO -->
@@ -161,12 +172,23 @@
                     <h2 class="section__title">Nasz zespół</h2>
                     <div class="team__list">
                         <figure class="team__item">
-                            <img
-                                src="./images/main_page/our_squad/product_designer.jpg"
-                                alt="#"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/main_page/our_squad/product-designer-mobile.jpg
+                                    "
+                                />
+                                <source
+                                    media="(max-width: 1199px)"
+                                    srcset="
+                                        ./images/main_page/our_squad/product-designer-tablet.jpg
+                                    "
+                                />
+                                <img
+                                    src="./images/main_page/our_squad/product-designer-desktop.jpg"
+                                />
+                            </picture>
                             <figcaption class="team__figcaption">
                                 <h3 class="team__title">John Doe</h3>
                                 <p class="team__description">Product Designer</p>
@@ -192,15 +214,26 @@
                             </figcaption>
                         </figure>
                         <figure class="team__item">
-                            <img
-                                src="./images/main_page/our_squad/frontend_developer.jpg"
-                                alt="#"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/main_page/our_squad/frontend-developer-mobile.jpg
+                                    "
+                                />
+                                <source
+                                    media="(max-width: 1199px)"
+                                    srcset="
+                                        ./images/main_page/our_squad/frontend-developer-tablet.jpg
+                                    "
+                                />
+                                <img
+                                    src="./images/main_page/our_squad/frontend-developer-desktop.jpg"
+                                />
+                            </picture>
                             <figcaption class="team__figcaption">
                                 <h3 class="team__title">John Doe</h3>
-                                <p class="team__description">Product Designer</p>
+                                <p class="team__description">Frontend Developer</p>
                                 <div class="social-media">
                                     <a href="#" class="social-media__icon">
                                         <svg width="20" height="20">
@@ -223,15 +256,26 @@
                             </figcaption>
                         </figure>
                         <figure class="team__item">
-                            <img
-                                src="./images/main_page/our_squad/marketer.jpg"
-                                alt="#"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/main_page/our_squad/marketer-mobile.jpg
+                                    "
+                                />
+                                <source
+                                    media="(max-width: 1199px)"
+                                    srcset="
+                                        ./images/main_page/our_squad/marketer-tablet.jpg
+                                    "
+                                />
+                                <img
+                                    src="./images/main_page/our_squad/marketer-desktop.jpg"
+                                />
+                            </picture>
                             <figcaption class="team__figcaption">
                                 <h3 class="team__title">John Doe</h3>
-                                <p class="team__description">Product Designer</p>
+                                <p class="team__description">Marketing</p>
                                 <div class="social-media">
                                     <a href="#" class="social-media__icon">
                                         <svg width="20" height="20">
@@ -254,15 +298,26 @@
                             </figcaption>
                         </figure>
                         <figure class="team__item">
-                            <img
-                                src="./images/main_page/our_squad/ui_designer.jpg"
-                                alt="#"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./images/main_page/our_squad/ui-designer-mobile.jpg
+                                    "
+                                />
+                                <source
+                                    media="(max-width: 1199px)"
+                                    srcset="
+                                        ./images/main_page/our_squad/ui-designer-tablet.jpg
+                                    "
+                                />
+                                <img
+                                    src="./images/main_page/our_squad/ui-designer-desktop.jpg"
+                                />
+                            </picture>
                             <figcaption class="team__figcaption">
                                 <h3 class="team__title">John Doe</h3>
-                                <p class="team__description">Product Designer</p>
+                                <p class="team__description">UI Designer</p>
                                 <div class="social-media">
                                     <a href="#" class="social-media__icon">
                                         <svg width="20" height="20">

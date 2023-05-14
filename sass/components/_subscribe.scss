@@ -29,3 +29,14 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .subscribe {
+        flex-direction: column;
+        &__input {
+            width: 100%;
+            max-width: 450px;
+            box-sizing: border-box;
+        }
+    }
+}

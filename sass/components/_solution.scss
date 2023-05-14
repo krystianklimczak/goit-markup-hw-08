@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: $colorBgPrimary;
+    background-size: cover;
     & .container {
         @include position();
         flex-direction: column;
@@ -23,5 +24,18 @@
     }
     &__btn {
         padding: 10px 41px 10px 42px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .solution {
+        & .container {
+            padding-bottom: 118px;
+        padding-top: 118px;
+        }
+        &__title {
+            font-size: 26px;
+            line-height: 1.62;
+        }
     }
 }

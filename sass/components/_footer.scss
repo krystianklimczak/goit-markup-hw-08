@@ -31,3 +31,27 @@
         height: fit-content;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .footer {
+        & .container {
+            justify-content: center;
+            flex-direction: column;
+            gap: 60px;
+        }
+        &__address {
+            align-items: center;
+        }
+        &__social {
+            padding-top: 0;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__form {
+        padding-top: 0;
+        padding-left: 0;
+        height: fit-content;
+    }
+    }
+}
