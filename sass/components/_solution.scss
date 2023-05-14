@@ -4,7 +4,6 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: $colorBgPrimary;
-    background-size: cover;
     & .container {
         @include position();
         flex-direction: column;
@@ -29,9 +28,10 @@
 
 @media screen and (max-width: 767px) {
     .solution {
+        background-size: cover;
         & .container {
             padding-bottom: 118px;
-        padding-top: 118px;
+            padding-top: 118px;
         }
         &__title {
             font-size: 26px;
