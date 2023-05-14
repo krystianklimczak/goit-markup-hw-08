@@ -1,0 +1,33 @@
+.footer {
+    background-color: $colorBgPrimary;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    & .container {
+        display: flex;
+        column-gap: 70px;
+        flex-wrap: wrap;
+    }
+    &__address {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__social {
+        padding-top: 12px;
+        height: fit-content;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $colorTextMainLight;
+        margin-bottom: 20px;
+    }
+    &__form {
+        padding-top: 12px;
+        padding-left: 8px;
+        height: fit-content;
+    }
+}

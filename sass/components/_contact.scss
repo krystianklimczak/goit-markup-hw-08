@@ -1,0 +1,21 @@
+.contact {
+    @include position();
+    gap: 30px;
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $colorTextMainGrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        fill: $colorTextMainGrey;
+        transition: color $transDurationFunction, fill $transDurationFunction;
+        &:hover {
+            color: $colorHover;
+            fill: $colorHover;
+        }
+    }
+}

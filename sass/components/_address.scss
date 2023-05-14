@@ -1,0 +1,19 @@
+.address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $colorTextMainLight;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 9px;
+    &__link {
+        color: $colorTextMainLightOp;
+        width: fit-content;
+        transition: color $transDurationFunction;
+        &:hover {
+            color: $colorHover;
+        }
+    }
+}

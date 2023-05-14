@@ -1,0 +1,31 @@
+.adventages {
+    & .container {
+        @include position();
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    &__card {
+        width: 270px;
+        height: 251px;
+    }
+    &__img {
+        background-color: $colorBgSecondary;
+        padding: 25px 100px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $colorTextMainGrey;
+    }
+}

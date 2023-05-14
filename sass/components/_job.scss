@@ -1,0 +1,27 @@
+.job {
+    padding-top: 0px;
+    &__list {
+        @include position();
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__item {
+        position: relative;
+        @include position();
+    }
+    &__description {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $colorTextMainLight;
+        position: absolute;
+        bottom: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        background: $colorJobOverlay;
+        width: 100%;
+    }
+}

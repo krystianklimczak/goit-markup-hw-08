@@ -1,0 +1,105 @@
+.form {
+    @include position();
+    flex-direction: column;
+    gap: 10px;
+    &__label {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        width: 100%;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: $colorTextMainGrey;
+    }
+    &__card {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 4px;
+        padding-top: 11px;
+        padding-left: 12px;
+        padding-bottom: 11px;
+        outline: none;
+        transition: $transDurationFunction;
+        &:is(:active, :focus-within) {
+            border: 1px solid $colorHover;
+            fill: $colorHover;
+        }
+    }
+    &__icon {
+        position: absolute;
+    }
+    &__input {
+        border: none;
+        width: 100%;
+        outline: none;
+        padding-left: 30px;
+        &:is(:active, :focus) {
+            color: $colorHover;
+        }
+    }
+    &__textarea {
+        border: none;
+        width: 100%;
+        outline: none;
+        resize: none;
+        height: 96px;
+        &:is(:focus, :active) {
+            color: $colorHover;
+        }
+        &:focus::placeholder {
+            color: $colorHover;
+            transition: $transDurationFunction;
+        }
+    }
+    &__checkbox {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $colorTextMainGrey;
+        @include position();
+        gap: 7px;
+        cursor: pointer;
+    }
+    &__tab {
+        position: relative;
+        display: flex;
+    }
+    &__confirm-icon {
+        fill: $colorHover;
+        position: absolute;
+    }
+    &__confirm-input {
+        appearance: none;
+        width: 16px;
+        height: 15px;
+        border: 2px solid black;
+        border-radius: 2px;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        background-color: $colorTextMainLight;
+        cursor: pointer;
+        &:checked {
+            border: none;
+            z-index: -1;
+        }
+    }
+    &__privacy {
+        color: $colorHover;
+        text-decoration: underline;
+    }
+    &__btn {
+        padding: 10px 76px;
+        @include position();
+        margin-top: 28px;
+        &:is(:hover, :focus) {
+            background-color: $colorBgPrimary;
+            box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.5);
+            color: $colorTextMainLight;
+        }
+    }
+}

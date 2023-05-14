@@ -1,0 +1,23 @@
+.clients {
+    &__list {
+        @include position();
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid $colorIconSocial;
+        border-radius: 4px;
+        padding: 16px 32px;
+        fill: $colorIconSocial;
+        transition: fill $transDurationFunction, border $transDurationFunction;
+        &:is(:hover, :focus) {
+            fill: $colorHover;
+            border: 1px solid $colorHover;
+        }
+    }
+}

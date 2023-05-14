@@ -1,0 +1,29 @@
+// COLOR TEXT
+$colorTextMain: #212121;
+$colorTextMainLight: #ffffff;
+$colorTextMainGrey: #757575;
+$colorTextMainBlack: #000000;
+$colorTextMainLightOp: rgba(255, 255, 255, 0.6);
+$colorHover: #2196f3;
+
+// COLOR COMPONENTS
+$colorLineHeader: #ececec;
+$colorBorderProjects: #eeeeee;
+$colorIconSocial: #afb1b8;
+$colorJobOverlay: rgba(47, 48, 58, 0.8);
+$colorProjectsOverlay: rgba(33, 150, 243, 0.9);
+
+// COLOR BACKGROUND's
+$colorBgPrimary: #2f303a;
+$colorBgSecondary: #f5f4fa;
+$colorBgPrimaryOp: rgba(47, 48, 58, 0.4);
+$colorBgIconSocialFooter: rgba(255, 255, 255, 0.1);
+$colorBgModal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+// TRANSITION CUBIC
+$transDurationFunction: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// FONTS FAMILIES
+$fontFamilyPrimary: 'Roboto', sans-serif;
+$fontFamilySecondary: 'Raleway', sans-serif;

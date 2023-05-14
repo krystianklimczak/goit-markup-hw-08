@@ -1,0 +1,19 @@
+.social-media {
+    @include position();
+    gap: 10px;
+    &__icon {
+        @include position();
+        padding: 12px;
+        border-radius: 50%;
+        fill: $colorIconSocial;
+        transition: fill $transDurationFunction, background-color $transDurationFunction;
+        &--footer {
+            background-color: $colorBgIconSocialFooter;
+            fill: $colorTextMainLight;
+        }
+        &:is(:hover, :focus) {
+            fill: $colorTextMainLight;
+            background-color: $colorHover;
+        }
+    }
+}

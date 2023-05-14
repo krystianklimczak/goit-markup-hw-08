@@ -1,0 +1,35 @@
+.team {
+    background: $colorBgSecondary;
+    &__list {
+        @include position();
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: $colorTextMainLight;
+    }
+    &__figcaption {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+    }
+    &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $colorTextMainGrey;
+        margin-bottom: 16px;
+    }
+}

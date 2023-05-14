@@ -1,0 +1,27 @@
+.solution {
+    background-image: linear-gradient($colorBgPrimaryOp, $colorBgPrimaryOp),
+        url(../images/main_page/solution/background_photo_section_solution.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $colorBgPrimary;
+    & .container {
+        @include position();
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 200px;
+        padding-top: 200px;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $colorTextMainLight;
+        max-width: 696px;
+    }
+    &__btn {
+        padding: 10px 41px 10px 42px;
+    }
+}

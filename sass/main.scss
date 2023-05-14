@@ -1,0 +1,45 @@
+@use './utils/vars' as *;
+@use './utils/mixin' as *;
+
+// GLOBAL STYLES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+body {
+    font-family: $fontFamilyPrimary;
+    color: $colorTextMain;
+}
+
+@import './components/container';
+@import './components/section';
+@import './components/btn';
+@import './components/social-media';
+@import './components/header';
+@import './components/menu';
+@import './components/logo';
+@import './components/navigation';
+@import './components/contact';
+@import './components/team';
+@import './components/clients';
+@import './components/solution';
+@import './components/adventages';
+@import './components/job';
+@import './components/footer';
+@import './components/address';
+@import './components/subscribe';
+@import './components/filters';
+@import './components/projects';
+@import './components/backgdrop';
+@import './components/modal';
+@import './components/form';

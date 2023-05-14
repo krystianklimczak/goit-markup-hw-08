@@ -1,0 +1,15 @@
+.logo {
+    font-family: $fontFamilySecondary;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $colorHover;
+    width: fit-content;
+    &--black {
+        color: $colorTextMainBlack;
+    }
+    &--white {
+        color: $colorTextMainLight;
+    }
+}
