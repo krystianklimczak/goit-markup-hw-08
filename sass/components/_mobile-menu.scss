@@ -6,6 +6,12 @@
     height: 100%;
     background-color: $colorTextMainLight;
     padding: 48px 40px;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: $transDurationFunction;
+    &.is-open {
+        transform: translateX(0);
+    }
     &__btn {
         position: absolute;
         top: 10px;
@@ -75,12 +81,9 @@
         color: $colorHover;
     }
     &__box {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
-}
-.is-open {
-    display: none;
 }
