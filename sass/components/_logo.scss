@@ -12,4 +12,9 @@
     &--white {
         color: $colorTextMainLight;
     }
+    
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 1.66;
+    }
 }

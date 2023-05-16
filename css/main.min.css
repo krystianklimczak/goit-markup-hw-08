@@ -178,6 +178,12 @@ body {
 .logo--white {
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.66;
+  }
+}
 
 .navigation {
   display: -webkit-box;
