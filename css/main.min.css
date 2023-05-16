@@ -422,31 +422,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.adventages__card {
-  width: 270px;
-  height: 251px;
-}
-.adventages__img {
-  background-color: #f5f4fa;
-  padding: 25px 100px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-.adventages__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.adventages__description {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
 @media screen and (max-width: 767px) {
   .adventages .container {
     -webkit-box-orient: vertical;
@@ -456,6 +431,12 @@ body {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+}
+.adventages__card {
+  width: 270px;
+  height: 251px;
+}
+@media screen and (max-width: 767px) {
   .adventages__card {
     width: 100%;
     max-width: 450px;
@@ -463,6 +444,14 @@ body {
     height: -moz-fit-content;
     height: fit-content;
   }
+}
+.adventages__img {
+  background-color: #f5f4fa;
+  padding: 25px 100px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
   .adventages__img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -470,11 +459,29 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 25px 0;
   }
+}
+.adventages__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
   .adventages__title {
     text-align: center;
   }
 }
+.adventages__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .job {
   padding-top: 0px;
 }
@@ -632,7 +639,6 @@ body {
 .address__link:hover {
   color: #2196f3;
 }
-
 @media screen and (max-width: 767px) {
   .address {
     -webkit-box-align: center;
@@ -640,6 +646,7 @@ body {
             align-items: center;
   }
 }
+
 .subscribe {
   display: -webkit-box;
   display: -ms-flexbox;

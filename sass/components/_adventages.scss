@@ -3,16 +3,33 @@
         @include position();
         gap: 30px;
         flex-wrap: wrap;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
     }
     &__card {
         width: 270px;
         height: 251px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            max-width: 450px;
+            height: fit-content;
+        }
     }
     &__img {
         background-color: $colorBgSecondary;
         padding: 25px 100px;
         border-radius: 4px;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 767px) {
+            display: flex;
+            justify-content: center;
+            padding: 25px 0;
+        }
     }
     &__title {
         font-weight: 700;
@@ -21,6 +38,10 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 10px;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
     &__description {
         font-size: 14px;
@@ -29,23 +50,4 @@
         color: $colorTextMainGrey;
     }
 }
-@media screen and (max-width: 767px) {
-    .adventages {
-        & .container {
-            flex-direction: column;
-            flex-wrap: nowrap;
-        }
-        &__card {
-            width: 100%;
-            max-width: 450px;
-            height: fit-content;
-        }
-        &__img {
-            display: flex;
-            justify-content: center;
-        }
-        &__title {
-            text-align: center;
-        }
-    }
-}
+

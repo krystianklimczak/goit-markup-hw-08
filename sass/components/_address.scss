@@ -16,10 +16,10 @@
             color: $colorHover;
         }
     }
-}
-
-@media screen and (max-width: 767px) {
-    .address {
-        align-items: center;
+    
+    @media screen and (max-width: 767px) {
+         
+            align-items: center;
+        
     }
 }
