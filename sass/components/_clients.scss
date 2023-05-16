@@ -19,12 +19,7 @@
             fill: $colorHover;
             border: 1px solid $colorHover;
         }
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .clients {
-        &__item {
+        @media screen and (max-width: 767px) {
             width: 210px;
         }
     }
