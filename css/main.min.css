@@ -547,39 +547,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.footer__address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-}
-.footer__social {
-  padding-top: 12px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.footer__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-.footer__form {
-  padding-top: 12px;
-  padding-left: 8px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 @media screen and (max-width: 767px) {
   .footer .container {
     -webkit-box-pack: center;
@@ -591,17 +558,57 @@ body {
             flex-direction: column;
     gap: 60px;
   }
+}
+.footer__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+@media screen and (max-width: 767px) {
   .footer__address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.footer__social {
+  padding-top: 12px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 767px) {
   .footer__social {
     padding-top: 0;
   }
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
   .footer__title {
     text-align: center;
   }
+}
+.footer__form {
+  padding-top: 12px;
+  padding-left: 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 767px) {
   .footer__form {
     padding-top: 0;
     padding-left: 0;
@@ -610,6 +617,7 @@ body {
     height: fit-content;
   }
 }
+
 .address {
   font-size: 14px;
   line-height: 1.71;
