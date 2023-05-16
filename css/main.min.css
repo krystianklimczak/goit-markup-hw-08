@@ -485,6 +485,11 @@ body {
 .job {
   padding-top: 0px;
 }
+@media screen and (max-width: 767px) {
+  .job {
+    display: none;
+  }
+}
 .job__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,11 +532,6 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
-  .job {
-    display: none;
-  }
-}
 .footer {
   background-color: #2f303a;
   padding-top: 60px;

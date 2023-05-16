@@ -1,5 +1,9 @@
 .job {
     padding-top: 0px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     &__list {
         @include position();
         flex-wrap: wrap;
@@ -23,11 +27,5 @@
         padding-bottom: 27px;
         background: $colorJobOverlay;
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .job {
-        display: none;
     }
 }
