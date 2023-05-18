@@ -882,7 +882,7 @@ body {
 .modal {
   position: absolute;
   width: 528px;
-  height: 581px;
+  height: auto;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -895,6 +895,12 @@ body {
           transform: scale(1);
   cursor: auto;
   padding: 40px;
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: auto;
+  }
 }
 .modal__title {
   font-weight: 700;
