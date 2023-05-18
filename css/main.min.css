@@ -1041,11 +1041,22 @@ body {
   gap: 7px;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .form__checkbox {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
 .form__tab {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .form__tab {
+    display: block;
+  }
 }
 .form__confirm-icon {
   fill: #2196f3;
