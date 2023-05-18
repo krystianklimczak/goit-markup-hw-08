@@ -70,6 +70,7 @@
         display: flex;
         gap: 20px;
         margin-top: 64px;
+        flex-wrap: wrap;
     }
     &__link {
         font-family: 'Roboto';

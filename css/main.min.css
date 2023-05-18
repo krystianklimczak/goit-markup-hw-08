@@ -1209,6 +1209,8 @@ body {
   display: flex;
   gap: 20px;
   margin-top: 64px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .mobile-menu__link {
   font-family: "Roboto";
