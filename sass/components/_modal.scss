@@ -1,6 +1,6 @@
 .modal {
     position: absolute;
-    width: 528px;
+    max-width: 528px;
     height: auto;
     background-color: $colorTextMainLight;
     box-shadow: $colorBgModal;
@@ -10,7 +10,7 @@
     cursor: auto;
     padding: 40px;
     @media screen and (max-width: 767px) {
-        width: 450px;
+        max-width: 450px;
         height: auto;
     }
     &__title {
