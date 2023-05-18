@@ -36,6 +36,9 @@
         @media screen and (max-width: 767px) {
             padding-top: 0;
         }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding-top: 0;
+        }
     }
     &__title {
         font-weight: 700;
@@ -66,6 +69,8 @@
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             grid-column-start: 1;
             grid-column-end: 3;
+            padding: 0;
+            margin-top: 60px;
         }
     }
 }

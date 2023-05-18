@@ -684,6 +684,11 @@ body {
     padding-top: 0;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__social {
+    padding-top: 0;
+  }
+}
 .footer__title {
   font-weight: 700;
   font-size: 14px;
@@ -723,6 +728,8 @@ body {
   .footer__form {
     grid-column-start: 1;
     grid-column-end: 3;
+    padding: 0;
+    margin-top: 60px;
   }
 }
 
