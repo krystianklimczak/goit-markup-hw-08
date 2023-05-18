@@ -12,14 +12,13 @@
     border: none;
     border-radius: 50%;
     outline: none;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
     &__icon {
         &:is(:hover, :focus) {
             fill: $colorHover;
         }
-    }
-}
-@media screen and (min-width: 768px) {
-    .menu-toggle {
-        display: none;
     }
 }
