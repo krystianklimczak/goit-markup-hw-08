@@ -3,6 +3,10 @@
         @include position();
         flex-wrap: wrap;
         gap: 30px;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: grid;
+            grid-template-columns: 226px 226px 226px;
+        }
     }
     &__item {
         display: flex;
@@ -22,5 +26,10 @@
         @media screen and (max-width: 767px) {
             width: 210px;
         }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 100%;
+            max-width: 226px;
+        }
+        
     }
 }

@@ -2,6 +2,9 @@
     @include position();
     flex-wrap: wrap;
     gap: 12px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: column;
+    }
     &__btn {
         @include position();
         gap: 24px;
@@ -11,6 +14,7 @@
             fill: $colorHover;
         }
     }
+
     &__input {
         background-color: inherit;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -26,6 +30,10 @@
             &::placeholder {
                 color: $colorHover;
             }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 100%;
+            max-width: 450px;
         }
     }
 }

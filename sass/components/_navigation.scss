@@ -25,6 +25,9 @@
                 bottom: 0;
                 left: 0;
                 transform: translateY(33px);
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    transform: translateY(39px);
+                }
             }
         }
     }
