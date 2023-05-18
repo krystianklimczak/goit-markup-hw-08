@@ -4,12 +4,21 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: $colorBgPrimary;
+    @media screen and (max-width: 767px) {
+        background-size: cover;
+        background-image: linear-gradient($colorBgPrimaryOp, $colorBgPrimaryOp),
+            url('../../images/main_page/solution/background-photo-section-solution-mobile.jpg');
+    }
     & .container {
         @include position();
         flex-direction: column;
         gap: 30px;
         padding-bottom: 200px;
         padding-top: 200px;
+        @media screen and (max-width: 767px) {
+            padding-bottom: 118px;
+            padding-top: 118px;
+        }
     }
     &__title {
         font-weight: 900;
@@ -20,22 +29,14 @@
         text-transform: uppercase;
         color: $colorTextMainLight;
         max-width: 696px;
+        @media screen and (max-width: 767px) {
+            font-size: 26px;
+            line-height: 1.62;
+        }
     }
     &__btn {
         padding: 10px 41px 10px 42px;
     }
 }
 
-@media screen and (max-width: 767px) {
-    .solution {
-        background-size: cover;
-        & .container {
-            padding-bottom: 118px;
-            padding-top: 118px;
-        }
-        &__title {
-            font-size: 26px;
-            line-height: 1.62;
-        }
-    }
-}
+

@@ -369,6 +369,13 @@ body {
   background-position: 50% 50%;
   background-color: #2f303a;
 }
+@media screen and (max-width: 767px) {
+  .solution {
+    background-size: cover;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/main_page/solution/background-photo-section-solution-mobile.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/main_page/solution/background-photo-section-solution-mobile.jpg");
+  }
+}
 .solution .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,6 +394,12 @@ body {
   padding-bottom: 200px;
   padding-top: 200px;
 }
+@media screen and (max-width: 767px) {
+  .solution .container {
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+}
 .solution__title {
   font-weight: 900;
   font-size: 44px;
@@ -397,23 +410,16 @@ body {
   color: #ffffff;
   max-width: 696px;
 }
-.solution__btn {
-  padding: 10px 41px 10px 42px;
-}
-
 @media screen and (max-width: 767px) {
-  .solution {
-    background-size: cover;
-  }
-  .solution .container {
-    padding-bottom: 118px;
-    padding-top: 118px;
-  }
   .solution__title {
     font-size: 26px;
     line-height: 1.62;
   }
 }
+.solution__btn {
+  padding: 10px 41px 10px 42px;
+}
+
 .adventages .container {
   display: -webkit-box;
   display: -ms-flexbox;
