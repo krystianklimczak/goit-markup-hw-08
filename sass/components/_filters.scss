@@ -2,6 +2,10 @@
     @include position();
     gap: 8px;
     margin-bottom: 50px;
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
     &__btn {
         padding: 6px 22px;
     }
